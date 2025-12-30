@@ -1,0 +1,132 @@
+.contact {
+    padding-top: calc(70px + var(--space-12));
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-8);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.contact-card {
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-surface);
+    border-radius: var(--radius-xl);
+    padding: var(--space-8);
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+    margin-bottom: var(--space-8);
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-4);
+}
+
+.contact-icon {
+    width: 48px;
+    height: 48px;
+    background: var(--gradient-primary);
+    border-radius: var(--radius-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-shrink: 0;
+}
+
+.contact-details h3 {
+    font-size: var(--text-sm);
+    font-weight: var(--font-semibold);
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: var(--space-1);
+}
+
+.contact-details a {
+    font-size: var(--text-base);
+    color: var(--color-text);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
+
+.contact-details a:hover {
+    color: var(--color-primary-light);
+}
+
+.contact-cta {
+    text-align: center;
+}
+
+.btn-lg {
+    padding: var(--space-4) var(--space-8);
+    font-size: var(--text-base);
+}
+
+.message-card {
+    background: var(--gradient-card);
+    border: 1px solid var(--color-surface);
+    border-radius: var(--radius-xl);
+    padding: var(--space-8);
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.message-icon {
+    width: 64px;
+    height: 64px;
+    background: var(--gradient-primary);
+    border-radius: var(--radius-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-bottom: var(--space-4);
+}
+
+.message-card h3 {
+    font-size: var(--text-2xl);
+    font-weight: var(--font-bold);
+    margin-bottom: var(--space-4);
+}
+
+.message-card p {
+    font-size: var(--text-base);
+    color: var(--color-text-secondary);
+    line-height: var(--leading-relaxed);
+    margin-bottom: var(--space-2);
+}
+
+@media (max-width: 768px) {
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
+
+    .message-card {
+        padding: var(--space-6);
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-card {
+        padding: var(--space-4);
+    }
+
+    .contact-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
