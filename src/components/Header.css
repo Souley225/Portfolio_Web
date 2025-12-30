@@ -4,9 +4,9 @@
     left: 0;
     right: 0;
     z-index: 1000;
-    background: rgba(15, 23, 42, 0.8);
+    background: rgba(15, 23, 42, 0.85);
     backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(51, 65, 85, 0.5);
+    border-bottom: 1px solid rgba(51, 65, 85, 0.3);
 }
 
 .header-container {
@@ -28,10 +28,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
+    width: 38px;
+    height: 38px;
     background: var(--gradient-primary);
-    border-radius: var(--radius-lg);
+    border-radius: var(--radius-md);
     font-weight: var(--font-bold);
     font-size: var(--text-sm);
     color: white;
@@ -52,7 +52,7 @@
     padding: var(--space-2) var(--space-3);
     font-size: var(--text-sm);
     font-weight: var(--font-medium);
-    color: var(--color-text-secondary);
+    color: var(--color-text-muted);
     text-decoration: none;
     border-radius: var(--radius-md);
     transition: all var(--transition-fast);
@@ -60,12 +60,12 @@
 
 .nav-link:hover {
     color: var(--color-text);
-    background: rgba(99, 102, 241, 0.1);
+    background: rgba(255, 255, 255, 0.05);
 }
 
 .nav-link.active {
     color: var(--color-primary-light);
-    background: rgba(99, 102, 241, 0.15);
+    background: rgba(13, 148, 136, 0.1);
 }
 
 /* Hamburger Menu */
@@ -84,7 +84,7 @@
 
 .menu-toggle span {
     display: block;
-    width: 24px;
+    width: 22px;
     height: 2px;
     background: var(--color-text);
     border-radius: 2px;
