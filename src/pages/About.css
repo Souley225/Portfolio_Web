@@ -27,10 +27,10 @@
 
 .about-image-decoration {
     position: absolute;
-    top: 16px;
-    left: 16px;
-    right: -16px;
-    bottom: -16px;
+    top: 12px;
+    left: 12px;
+    width: 100%;
+    height: 100%;
     background: var(--gradient-primary);
     border-radius: var(--radius-xl);
     opacity: 0.15;
