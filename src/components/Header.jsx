@@ -38,6 +38,12 @@ function Header() {
                     <span className="logo-text">Souleymane Sall</span>
                 </NavLink>
 
+                {/* Mobile overlay for closing menu */}
+                <div
+                    className={`mobile-overlay ${isMenuOpen ? 'open' : ''}`}
+                    onClick={closeMenu}
+                />
+
                 <nav className={`header-nav ${isMenuOpen ? 'open' : ''}`}>
                     {navLinks.map(link => (
                         <NavLink

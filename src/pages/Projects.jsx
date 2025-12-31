@@ -28,8 +28,9 @@ const projects = [
             'Architecture modulaire'
         ],
         stack: ['Python', 'SQL', 'GCP', 'scikit-learn'],
-        status: 'github',
-        statusLabel: 'GitHub',
+        status: 'deployed',
+        statusLabel: 'Déployé',
+        demoUrl: 'https://customer-segmentation-project-591h.onrender.com',
         githubUrl: 'https://github.com/Souley225/Customer_segmentation_project'
     },
     {

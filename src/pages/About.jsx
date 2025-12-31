@@ -48,6 +48,16 @@ function About() {
                             </div>
                         </div>
 
+                        <div className="about-languages">
+                            <h3>Langages de programmation</h3>
+                            <div className="languages-tags">
+                                <span className="tag tag-lang">Python</span>
+                                <span className="tag tag-lang">R</span>
+                                <span className="tag tag-lang">SAS</span>
+                                <span className="tag tag-lang">SQL</span>
+                            </div>
+                        </div>
+
                         <div className="about-interests">
                             <h3>Centres d'intérêt professionnels</h3>
                             <div className="interests-tags">

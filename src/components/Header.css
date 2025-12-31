@@ -119,37 +119,55 @@
         display: flex;
     }
 
-    /* Full-screen mobile menu with SOLID background */
+    /* Slide-in mobile menu - partial coverage */
     .header-nav {
         position: fixed;
         top: 0;
-        left: 0;
         right: 0;
         bottom: 0;
-        width: 100vw;
+        width: 70%;
+        max-width: 280px;
         height: 100vh;
         height: 100dvh;
-        /* Dynamic viewport height for mobile browsers */
         flex-direction: column;
         align-items: center;
         justify-content: center;
         gap: var(--space-3);
-        /* SOLID OPAQUE BACKGROUND - NO TRANSPARENCY */
-        background-color: #0f172a !important;
-        background: #0f172a !important;
+        background: rgba(15, 23, 42, 0.95);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border-left: 1px solid rgba(51, 65, 85, 0.5);
+        box-shadow: -10px 0 40px rgba(0, 0, 0, 0.4);
         z-index: 1001;
         /* Hidden by default */
         transform: translateX(100%);
         opacity: 0;
         visibility: hidden;
         transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
-        /* Ensure no content shows through */
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
     }
 
     .header-nav.open {
         transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    /* Overlay for closing menu when clicking outside */
+    .mobile-overlay {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 1000;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    .mobile-overlay.open {
         opacity: 1;
         visibility: visible;
     }
