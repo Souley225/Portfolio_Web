@@ -27,14 +27,14 @@
 
 .about-image-decoration {
     position: absolute;
-    top: 12px;
-    left: 12px;
-    width: 100%;
-    height: 100%;
+    top: 20px;
+    left: 20px;
+    right: -20px;
+    bottom: -20px;
     background: var(--gradient-primary);
     border-radius: var(--radius-xl);
-    opacity: 0.15;
-    z-index: 0;
+    opacity: 0.2;
+    z-index: -1;
 }
 
 .about-text {
