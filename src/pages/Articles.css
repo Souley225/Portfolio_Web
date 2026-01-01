@@ -83,8 +83,32 @@
     text-align: center;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
+    .articles {
+        padding-top: calc(60px + var(--space-8));
+    }
+
     .articles-grid {
         grid-template-columns: 1fr;
+    }
+
+    .article-title {
+        font-size: var(--text-base);
+    }
+}
+
+@media (max-width: 480px) {
+    .article-card {
+        padding: var(--space-4);
+    }
+
+    .article-link {
+        min-height: 44px;
+        padding: var(--space-2) 0;
+    }
+
+    .articles-cta .btn {
+        width: 100%;
+        min-height: 48px;
     }
 }

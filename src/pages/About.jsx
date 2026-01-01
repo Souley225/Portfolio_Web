@@ -23,13 +23,16 @@ function About() {
 
                         <div className="about-story">
                             <p>
-                                Parcours académique en <strong>statistique appliquée</strong> et <strong>économie</strong>,
-                                avec un intérêt fort pour la data appliquée à des <strong>problématiques business concrètes</strong>.
+                                Je conçois la data science comme un outil d’aide à la décision, et non comme une fin en soi.
                             </p>
                             <p>
-                                Goût pour les projets <strong>end-to-end</strong>, de la donnée brute jusqu'au modèle exploitable.
-                                Mon approche combine rigueur statistique et vision orientée produit,
-                                avec une attention particulière aux bonnes pratiques MLOps.
+                                Mon approche repose sur la rigueur méthodologique, la compréhension des enjeux métier et la responsabilité liée à l’utilisation de modèles en production.
+                            </p>
+                            <p>
+                                Je m’attache à développer des solutions lisibles, maintenables et compréhensibles par les équipes qui les utilisent, avec une attention particulière portée à la reproductibilité et à l’impact réel.
+                            </p>
+                            <p>
+                                J’ai un goût marqué pour les projets end-to-end, de la donnée brute jusqu’au modèle exploitable, en combinant rigueur statistique, vision orientée produit et bonnes pratiques MLOps.
                             </p>
                         </div>
 

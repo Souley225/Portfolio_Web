@@ -29,10 +29,10 @@
   --color-surface: rgba(51, 65, 85, 0.5);
   --color-border: rgba(71, 85, 105, 0.4);
 
-  /* Text Colors - High Readability */
+  /* Text Colors - High Readability (WCAG AA Compliant) */
   --color-text: #f8fafc;
-  --color-text-secondary: #cbd5e1;
-  --color-text-muted: #94a3b8;
+  --color-text-secondary: #e2e8f0;
+  --color-text-muted: #cbd5e1;
 
   /* Status Colors */
   --color-success: #10b981;
@@ -450,11 +450,11 @@ a:hover {
 }
 
 .animate-fade-in-up {
-  animation: fadeInUp 0.5s ease forwards;
+  animation: fadeInUp 0.3s ease forwards;
 }
 
 .animate-fade-in {
-  animation: fadeIn 0.4s ease forwards;
+  animation: fadeIn 0.25s ease forwards;
 }
 
 .animate-float {

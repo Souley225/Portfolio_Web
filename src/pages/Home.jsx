@@ -21,35 +21,57 @@ function Home() {
                     </div>
 
                     <div className="hero-text">
-                        <div className="hero-badge animate-fade-in-up">
-                            <span className="badge-dot"></span>
-                            Disponible pour opportunités
+                        <div className="hero-header animate-fade-in-up">
+                            <h1 className="hero-name">Souleymane Sall</h1>
+                            <div className="hero-badge">
+                                <span className="badge-dot"></span>
+                                Disponible immédiatement
+                            </div>
                         </div>
 
-                        <h1 className="hero-title animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
-                            Souleymane Sall
-                        </h1>
+                        <h2 className="hero-title animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
+                            Data Scientist – <span className="text-gradient">Scoring, ML & NLP</span>
+                        </h2>
 
-                        <p className="hero-subtitle animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-                            Data Scientist – <span className="text-gradient">Scoring, Machine Learning & NLP</span>
-                        </p>
+                        <div className="hero-profile animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+                            <ul className="profile-list">
+                                <li className="profile-item">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                        <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                                        <path d="M6 12v5c0 2 2.5 3 6 3s6-1 6-3v-5"></path>
+                                    </svg>
+                                    <span>Master Statistique Appliquée</span>
+                                </li>
 
-                        <p className="hero-description animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
-                            Data Scientist issu d'un Master en Statistique Appliquée, avec une expérience professionnelle en ESN.
-                            Spécialisé dans les projets de <strong>scoring</strong>, <strong>segmentation client</strong> et <strong>recommandation de produits</strong>,
-                            avec une approche orientée pipeline complet, cloud et bonnes pratiques MLOps.
+                                <li className="profile-item">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                                    </svg>
+                                    <span>3 projets ML industrialisés de bout en bout</span>
+                                </li>
+                                <li className="profile-item">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                        <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                                    </svg>
+                                    <span>Python, SQL, Git, Excel, GCP</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <p className="hero-approach animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
+                            Mon approche : comprendre le besoin métier, développer des solutions robustes et maintenables, documenter pour faciliter la transmission.
                         </p>
 
                         <div className="hero-cta animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
-                            <Link to="/projets" className="btn btn-primary">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                            <Link to="/projets" className="btn btn-primary btn-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                     <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
                                     <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
                                 </svg>
-                                Voir les projets
+                                Voir mes projets
                             </Link>
-                            <a href="/CV_Souleymane_SALL_.pdf" download className="btn btn-secondary">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                            <a href="/CV_Souleymane_SALL_.pdf" download className="btn btn-secondary btn-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                     <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                                     <polyline points="7 10 12 15 17 10"></polyline>
                                     <line x1="12" y1="15" x2="12" y2="3"></line>
