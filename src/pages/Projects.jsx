@@ -51,7 +51,7 @@ const projects = [
     {
         id: 4,
         type: 'MLOps / Recommandation',
-        title: 'Système de Recommandation MLOps',
+        title: 'Moteur de Recommandation de Films',
         description: 'Pipeline MLOps complet pour un système de recommandation, avec tracking des expériences et déploiement automatisé.',
         points: [
             'Pipeline MLOps end-to-end',
