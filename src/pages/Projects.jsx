@@ -16,7 +16,7 @@ const projects = [
         statusLabel: 'Déployé',
         demoUrl: 'https://customer-churn-project-2-zlzb.onrender.com/',
         githubUrl: 'https://github.com/Souley225/Customer_Churn_Project',
-        presentationUrl: '' // Ajouter le PDF ici
+        presentationUrl: '/Modèle de Scoring.pdf'
     },
     {
         id: 2,
@@ -49,7 +49,7 @@ const projects = [
         status: 'github',
         statusLabel: 'GitHub',
         githubUrl: 'https://github.com/Souley225/NLP_Phishing_detection_Project',
-        presentationUrl: '' // Ajouter le PDF ici
+        presentationUrl: '/Phishing_Detection_NLP_Machine_Learnin_System .pdf'
     },
     {
         id: 4,
@@ -65,7 +65,7 @@ const projects = [
         status: 'inprogress',
         statusLabel: 'Bientôt déployé',
         githubUrl: 'https://github.com/Souley225/mlops-recommender-system',
-        presentationUrl: '' // Ajouter le PDF ici
+        presentationUrl: '/Moteur de Recommandation de Films.pdf'
     }
 ]
 
