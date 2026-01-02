@@ -124,6 +124,29 @@
     flex: 1;
 }
 
+.render-notice {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-2);
+    margin-top: var(--space-3);
+    padding: var(--space-3);
+    background: rgba(245, 158, 11, 0.08);
+    border: 1px solid rgba(245, 158, 11, 0.2);
+    border-radius: var(--radius-md);
+    font-size: var(--text-xs);
+    color: var(--color-warning);
+    line-height: var(--leading-relaxed);
+}
+
+.render-notice svg {
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.render-notice span {
+    color: var(--color-text-muted);
+}
+
 @media (max-width: 768px) {
     .projects {
         padding-top: calc(60px + var(--space-8));
