@@ -5,63 +5,67 @@ const projects = [
         id: 1,
         type: 'Scoring Prédictif',
         title: 'Modèle de Scoring',
-        description: 'Construction d\'un modèle de scoring avec pipeline complet, de la préparation des données au déploiement.',
+        description: 'Solution de prédiction du risque de départ client permettant d\'identifier les clients à risque et d\'anticiper les actions de fidélisation.',
         points: [
-            'Feature engineering structuré',
-            'Comparaison de modèles',
-            'Déploiement via API'
+            'Détection des clients à risque',
+            'Priorisation des actions de rétention',
+            'Application web pour tester les prédictions'
         ],
         stack: ['Python', 'scikit-learn', 'Streamlit', 'MLflow', 'Docker'],
         status: 'deployed',
         statusLabel: 'Déployé',
         demoUrl: 'https://customer-churn-project-2-zlzb.onrender.com/',
-        githubUrl: 'https://github.com/Souley225/Customer_Churn_Project'
+        githubUrl: 'https://github.com/Souley225/Customer_Churn_Project',
+        presentationUrl: '' // Ajouter le PDF ici
     },
     {
         id: 2,
         type: 'Segmentation / Recommandation',
         title: 'Segmentation Client & Recommandation Produits',
-        description: 'Pipeline de segmentation client et recommandation de produits inspiré de cas e-commerce.',
+        description: 'Analyse de la valeur client et recommandations personnalisées pour optimiser le ciblage marketing et augmenter le chiffre d\'affaires.',
         points: [
-            'Segmentation RFM',
-            'Market Basket Analysis',
-            'Architecture modulaire'
+            'Identification des meilleurs clients',
+            'Recommandations de vente croisée',
+            'Tableau de bord interactif'
         ],
         stack: ['Python', 'SQL', 'GCP', 'scikit-learn'],
         status: 'deployed',
         statusLabel: 'Déployé',
         demoUrl: 'https://customer-segmentation-project-591h.onrender.com',
-        githubUrl: 'https://github.com/Souley225/Customer_segmentation_project'
+        githubUrl: 'https://github.com/Souley225/Customer_segmentation_project',
+        presentationUrl: '/Segmentation Client & Recommandation Produit.pdf'
     },
     {
         id: 3,
         type: 'NLP / Sécurité',
         title: 'Détection de Phishing par URL',
-        description: 'Détection d\'URLs frauduleuses à l\'aide de techniques NLP et de modèles supervisés.',
+        description: 'Outil de sécurité pour détecter automatiquement les liens malveillants et protéger les utilisateurs contre le phishing.',
         points: [
-            'Feature extraction (TF-IDF, patterns URL)',
-            'Validation croisée',
-            'Pipeline reproductible'
+            'Protection contre les arnaques en ligne',
+            'Analyse automatique des URLs suspectes',
+            'Système de scoring de confiance'
         ],
         stack: ['Python', 'NLP', 'scikit-learn'],
         status: 'github',
         statusLabel: 'GitHub',
-        githubUrl: 'https://github.com/Souley225/NLP_Phishing_detection_Project'
+        githubUrl: 'https://github.com/Souley225/NLP_Phishing_detection_Project',
+        presentationUrl: '' // Ajouter le PDF ici
     },
     {
         id: 4,
         type: 'MLOps / Recommandation',
         title: 'Moteur de Recommandation de Films',
-        description: 'Pipeline MLOps complet pour un système de recommandation, avec tracking des expériences et déploiement automatisé.',
+        description: 'Système de recommandation personnalisée de films pour améliorer l\'expérience utilisateur et l\'engagement sur une plateforme de streaming.',
         points: [
-            'Pipeline MLOps end-to-end',
-            'Tracking expériences MLflow',
-            'Déploiement automatisé'
+            'Recommandations personnalisées',
+            'Amélioration de l\'engagement utilisateur',
+            'Interface de test interactive'
         ],
         stack: ['Python', 'MLflow', 'Docker', 'FastAPI', 'CI/CD'],
         status: 'inprogress',
         statusLabel: 'Bientôt déployé',
-        githubUrl: 'https://github.com/Souley225/mlops-recommender-system'
+        githubUrl: 'https://github.com/Souley225/mlops-recommender-system',
+        presentationUrl: '' // Ajouter le PDF ici
     }
 ]
 
@@ -125,6 +129,39 @@ function Projects() {
                                         </svg>
                                         Démo
                                     </a>
+                                )}
+                                {!project.demoUrl && (project.status === 'inprogress' || project.status === 'github') && (
+                                    <div className="btn btn-coming-soon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                            <polyline points="15 3 21 3 21 9"></polyline>
+                                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                                        </svg>
+                                        Bientôt
+                                    </div>
+                                )}
+                                {project.presentationUrl ? (
+                                    <a href={project.presentationUrl} target="_blank" rel="noopener noreferrer" className="btn btn-slides">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                            <polyline points="14 2 14 8 20 8"></polyline>
+                                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                                            <polyline points="10 9 9 9 8 9"></polyline>
+                                        </svg>
+                                        Slides
+                                    </a>
+                                ) : (
+                                    <div className="btn btn-slides-disabled">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                            <polyline points="14 2 14 8 20 8"></polyline>
+                                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                                            <polyline points="10 9 9 9 8 9"></polyline>
+                                        </svg>
+                                        Slides
+                                    </div>
                                 )}
                             </div>
                             {project.status === 'deployed' && (

@@ -117,11 +117,66 @@
 
 .project-links {
     display: flex;
+    flex-wrap: wrap;
     gap: var(--space-3);
 }
 
 .project-links .btn {
-    flex: 1;
+    flex: 1 1 0;
+    min-width: 120px;
+}
+
+.project-presentation {
+    margin-bottom: var(--space-3);
+}
+
+.btn-full {
+    width: 100%;
+}
+
+.btn-slides {
+    background: #2563eb;
+    color: white;
+    box-shadow: var(--shadow-md);
+}
+
+.btn-slides:hover {
+    background: #3b82f6;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+    color: white;
+}
+
+.btn-slides-disabled {
+    background: rgba(37, 99, 235, 0.2);
+    color: rgba(59, 130, 246, 0.5);
+    border: 1px solid rgba(37, 99, 235, 0.3);
+    cursor: default;
+}
+
+.btn-slides-disabled:hover {
+    background: rgba(37, 99, 235, 0.2);
+    color: rgba(59, 130, 246, 0.5);
+    transform: none;
+}
+
+.btn-coming-soon {
+    background: rgba(51, 65, 85, 0.4);
+    color: var(--color-text-muted);
+    border: 1px solid var(--color-border);
+    cursor: default;
+}
+
+.btn-coming-soon svg {
+    opacity: 0.6;
+    width: 18px;
+    height: 18px;
+}
+
+.btn-coming-soon:hover {
+    background: rgba(51, 65, 85, 0.5);
+    color: var(--color-text-muted);
+    transform: none;
 }
 
 .render-notice {
