@@ -14,7 +14,7 @@ const projects = [
         stack: ['Python', 'scikit-learn', 'Streamlit', 'MLflow', 'Docker'],
         status: 'deployed',
         statusLabel: 'Déployé',
-        demoUrl: 'https://customer-churn-project-2-zlzb.onrender.com/',
+        demoUrl: 'https://customer-churn-project-zv7e.onrender.com/',
         githubUrl: 'https://github.com/Souley225/Customer_Churn_Project',
         presentationUrl: '/Modèle de Scoring.pdf'
     },
