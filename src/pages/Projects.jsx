@@ -37,6 +37,23 @@ const projects = [
     },
     {
         id: 3,
+        type: 'MLOps / Recommandation',
+        title: 'Moteur de Recommandation de Films',
+        description: 'Système de recommandation personnalisée de films pour améliorer l\'expérience utilisateur et l\'engagement sur une plateforme de streaming.',
+        points: [
+            'Recommandations personnalisées',
+            'Amélioration de l\'engagement utilisateur',
+            'Interface de test interactive'
+        ],
+        stack: ['Python', 'MLflow', 'Docker', 'FastAPI', 'CI/CD'],
+        status: 'deployed',
+        statusLabel: 'Déployé',
+        demoUrl: 'https://mlops-recommender-ui.onrender.com',
+        githubUrl: 'https://github.com/Souley225/mlops-recommender-system',
+        presentationUrl: '/Moteur de Recommandation de Films.pdf'
+    },
+    {
+        id: 4,
         type: 'NLP / Sécurité',
         title: 'Détection de Phishing par URL',
         description: 'Outil de sécurité pour détecter automatiquement les liens malveillants et protéger les utilisateurs contre le phishing.',
@@ -50,22 +67,6 @@ const projects = [
         statusLabel: 'GitHub',
         githubUrl: 'https://github.com/Souley225/NLP_Phishing_detection_Project',
         presentationUrl: '/Phishing_Detection_NLP_Machine_Learnin_System .pdf'
-    },
-    {
-        id: 4,
-        type: 'MLOps / Recommandation',
-        title: 'Moteur de Recommandation de Films',
-        description: 'Système de recommandation personnalisée de films pour améliorer l\'expérience utilisateur et l\'engagement sur une plateforme de streaming.',
-        points: [
-            'Recommandations personnalisées',
-            'Amélioration de l\'engagement utilisateur',
-            'Interface de test interactive'
-        ],
-        stack: ['Python', 'MLflow', 'Docker', 'FastAPI', 'CI/CD'],
-        status: 'inprogress',
-        statusLabel: 'Bientôt déployé',
-        githubUrl: 'https://github.com/Souley225/mlops-recommender-system',
-        presentationUrl: '/Moteur de Recommandation de Films.pdf'
     }
 ]
 
