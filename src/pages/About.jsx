@@ -42,12 +42,13 @@ function About() {
                                 <span className="highlight-label">Statistique Appliquée</span>
                             </div>
                             <div className="highlight-item">
-                                <span className="highlight-number">6 mois</span>
-                                <span className="highlight-label">Expérience ESN</span>
+                                <span className="highlight-number">2+</span>
+                                <span className="highlight-label">Certifications SAS</span>
                             </div>
+
                             <div className="highlight-item">
                                 <span className="highlight-number">3+</span>
-                                <span className="highlight-label">Projets ML</span>
+                                <span className="highlight-label">Projets ML Deployés</span>
                             </div>
                         </div>
 
