@@ -4,7 +4,7 @@ const projects = [
     {
         id: 1,
         type: 'Scoring Prédictif',
-        title: 'Modèle de Scoring',
+        title: 'Modèle de Scoring d\'Attrition Client',
         description: 'Solution de prédiction du risque de départ client permettant d\'identifier les clients à risque et d\'anticiper les actions de fidélisation.',
         points: [
             'Détection des clients à risque',
