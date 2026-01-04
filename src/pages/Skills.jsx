@@ -21,7 +21,7 @@ const skillCategories = [
                 <circle cx="16.5" cy="14.5" r="1.5"></circle>
             </svg>
         ),
-        skills: ['Segmentation', 'Recommandation', 'NLP', 'Feature Engineering', 'Model Selection']
+        skills: ['Segmentation client', ' Systemes de recommandation ', 'NLP', 'Feature engineering', 'Évaluation de modèles']
     },
     {
         title: 'Cloud & Data Engineering',
