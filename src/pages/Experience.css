@@ -158,16 +158,26 @@
     line-height: var(--leading-relaxed);
 }
 
+.experience-missions li>span {
+    flex: 1;
+}
+
 .experience-missions li svg {
     color: var(--color-success);
     flex-shrink: 0;
-    margin-top: 2px;
+    margin-top: 3px;
 }
 
 .stack-tags {
     display: flex;
     flex-wrap: wrap;
     gap: var(--space-2);
+}
+
+.stack-tags .stack-tag {
+    background: rgba(0, 113, 227, 0.1);
+    color: #0071E3;
+    border: 1px solid rgba(0, 113, 227, 0.2);
 }
 
 /* Highlight text */
@@ -191,6 +201,18 @@
     }
 
     .experience-card {
-        padding: var(--space-6);
+        padding: var(--space-4);
+    }
+
+    .experience-missions li {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        gap: var(--space-2);
+    }
+
+    .experience-missions li>span {
+        flex: 1;
+        min-width: 0;
     }
 }

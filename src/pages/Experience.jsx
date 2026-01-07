@@ -92,7 +92,7 @@ function Experience() {
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                                 <polyline points="20 6 9 17 4 12"></polyline>
                                             </svg>
-                                            Participation à la R&D sur le moteur de scoring no-code <span className="highlight">Scoring.AI</span>
+                                            <span>Participation à la R&D sur le moteur de scoring no-code <strong>Scoring.AI</strong></span>
                                         </li>
                                     </ul>
                                 </div>
