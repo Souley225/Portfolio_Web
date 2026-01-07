@@ -1,5 +1,6 @@
 .skills {
-    padding-top: calc(70px + var(--space-16));
+    padding-top: calc(48px + var(--space-16));
+    background: var(--bg);
 }
 
 .skills-grid {
@@ -10,27 +11,25 @@
 }
 
 .skill-card {
-    background: var(--color-bg-card);
-    backdrop-filter: blur(10px);
-    border: 1px solid var(--color-border);
+    background: var(--surface);
+    border: 1px solid rgba(0, 0, 0, 0.12);
     border-radius: var(--radius-xl);
     padding: var(--space-6);
     text-align: center;
     transition: all var(--transition-base);
+    box-shadow: var(--shadow-sm);
 }
 
 .skill-card:hover {
-    background: var(--color-bg-card-hover);
-    border-color: rgba(13, 148, 136, 0.3);
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-lg);
+    border-color: rgba(0, 0, 0, 0.2);
+    box-shadow: var(--shadow-card-hover);
 }
 
 .skill-icon {
-    width: 52px;
-    height: 52px;
+    width: 48px;
+    height: 48px;
     margin: 0 auto var(--space-4);
-    background: var(--gradient-primary);
+    background: var(--accent);
     border-radius: var(--radius-lg);
     display: flex;
     align-items: center;
@@ -40,8 +39,8 @@
 
 .skill-category {
     font-size: var(--text-lg);
-    font-weight: var(--font-bold);
-    color: var(--color-text);
+    font-weight: var(--font-semibold);
+    color: var(--primary);
     margin-bottom: var(--space-4);
 }
 
@@ -54,16 +53,20 @@
 
 .skill-list li {
     font-size: var(--text-sm);
-    color: var(--color-text-secondary);
+    color: #1D1D1F;
     padding: var(--space-2) var(--space-3);
-    background: rgba(51, 65, 85, 0.3);
+    background: #FFFFFF;
     border-radius: var(--radius-md);
     transition: all var(--transition-fast);
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
 }
 
 .skill-list li:hover {
-    background: rgba(13, 148, 136, 0.1);
-    color: var(--color-primary-light);
+    background: rgba(0, 113, 227, 0.08);
+    color: #0071E3;
+    border-color: rgba(0, 113, 227, 0.3);
+    box-shadow: 0 2px 6px rgba(0, 113, 227, 0.12);
 }
 
 .tech-logos {
@@ -74,7 +77,7 @@
 .tech-logos h3 {
     font-size: var(--text-xl);
     font-weight: var(--font-semibold);
-    color: var(--color-text);
+    color: var(--primary);
     margin-bottom: var(--space-8);
 }
 
@@ -93,50 +96,50 @@
 }
 
 .tech-icon {
-    width: 56px;
-    height: 56px;
+    width: 52px;
+    height: 52px;
     border-radius: var(--radius-lg);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: var(--text-base);
-    font-weight: var(--font-bold);
+    font-size: var(--text-sm);
+    font-weight: var(--font-semibold);
     color: white;
     transition: all var(--transition-base);
 }
 
 .tech-icon:hover {
-    transform: scale(1.08);
+    transform: scale(1.05);
     box-shadow: var(--shadow-md);
 }
 
 .tech-icon.python {
-    background: linear-gradient(135deg, #3776ab, #ffd43b);
+    background: #3776AB;
 }
 
 .tech-icon.sql {
-    background: linear-gradient(135deg, #00758f, #f29111);
+    background: #00758F;
 }
 
 .tech-icon.gcp {
-    background: linear-gradient(135deg, #4285f4, #34a853);
+    background: #4285F4;
 }
 
 .tech-icon.sklearn {
-    background: linear-gradient(135deg, #f89939, #3499cd);
+    background: #F89939;
 }
 
 .tech-icon.docker {
-    background: linear-gradient(135deg, #2496ed, #0db7ed);
+    background: #2496ED;
 }
 
 .tech-icon.git {
-    background: linear-gradient(135deg, #f05032, #de4c36);
+    background: #F05032;
 }
 
 .tech-item span {
     font-size: var(--text-sm);
-    color: var(--color-text-muted);
+    color: var(--secondary);
 }
 
 /* Certifications */
@@ -147,7 +150,7 @@
 .certifications h3 {
     font-size: var(--text-xl);
     font-weight: var(--font-semibold);
-    color: var(--color-text);
+    color: var(--primary);
     margin-bottom: var(--space-8);
 }
 
@@ -163,22 +166,22 @@
     align-items: center;
     gap: var(--space-3);
     padding: var(--space-3) var(--space-5);
-    background: var(--color-bg-card);
-    border: 1px solid var(--color-border);
+    background: var(--surface);
+    border: 1px solid rgba(0, 0, 0, 0.12);
     border-radius: var(--radius-full);
     transition: all var(--transition-base);
+    box-shadow: var(--shadow-sm);
 }
 
 .certification-item:hover {
-    border-color: rgba(13, 148, 136, 0.3);
-    transform: translateY(-2px);
+    border-color: rgba(0, 0, 0, 0.2);
     box-shadow: var(--shadow-md);
 }
 
 .certification-icon {
-    width: 32px;
-    height: 32px;
-    background: var(--gradient-primary);
+    width: 28px;
+    height: 28px;
+    background: var(--accent);
     border-radius: var(--radius-full);
     display: flex;
     align-items: center;
@@ -187,17 +190,17 @@
 }
 
 .certification-icon.sas {
-    background: linear-gradient(135deg, #0066b3, #00a1e0);
+    background: #0066B3;
 }
 
 .certification-icon.dataiku {
-    background: linear-gradient(135deg, #2ab1ac, #00cc99);
+    background: #2AB1AC;
 }
 
 .certification-item span {
     font-size: var(--text-sm);
     font-weight: var(--font-medium);
-    color: var(--color-text);
+    color: var(--primary);
 }
 
 @media (max-width: 768px) {
@@ -219,8 +222,8 @@
     }
 
     .tech-icon {
-        width: 48px;
-        height: 48px;
-        font-size: var(--text-sm);
+        width: 44px;
+        height: 44px;
+        font-size: var(--text-xs);
     }
 }

@@ -1,5 +1,6 @@
 .contact {
-    padding-top: calc(70px + var(--space-16));
+    padding-top: calc(48px + var(--space-16));
+    background: var(--bg);
 }
 
 .contact-content {
@@ -11,11 +12,11 @@
 }
 
 .contact-card {
-    background: var(--color-bg-card);
-    backdrop-filter: blur(10px);
-    border: 1px solid var(--color-border);
+    background: var(--surface);
+    border: 1px solid rgba(0, 0, 0, 0.12);
     border-radius: var(--radius-xl);
     padding: var(--space-8);
+    box-shadow: var(--shadow-sm);
 }
 
 .contact-info {
@@ -34,24 +35,21 @@
     padding: var(--space-4);
     border-radius: var(--radius-lg);
     border: 1px solid transparent;
-    transition: all var(--transition-normal);
-    background: rgba(255, 255, 255, 0.03);
+    transition: all var(--transition-base);
 }
 
 .contact-item:hover {
-    background: rgba(255, 255, 255, 0.05);
-    border-color: var(--color-border);
-    transform: translateY(-2px);
+    background: var(--bg-secondary);
 }
 
 .contact-item:hover .contact-icon {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .contact-icon {
     width: 44px;
     height: 44px;
-    background: var(--gradient-primary);
+    background: var(--accent);
     border-radius: var(--radius-lg);
     display: flex;
     align-items: center;
@@ -63,17 +61,16 @@
 
 .contact-details h3 {
     font-size: var(--text-base);
-    font-weight: var(--font-semibold);
-    color: var(--color-text);
+    font-weight: var(--font-medium);
+    color: var(--primary);
     margin-bottom: var(--space-1);
     line-height: 1.2;
 }
 
 .contact-details p {
     font-size: var(--text-sm);
-    color: var(--color-text-muted);
+    color: var(--secondary);
     margin: 0;
-    font-weight: var(--font-medium);
 }
 
 .contact-cta {
@@ -86,8 +83,8 @@
 }
 
 .message-card {
-    background: var(--color-bg-card);
-    border: 1px solid var(--color-border);
+    background: var(--bg-secondary);
+    border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: var(--radius-xl);
     padding: var(--space-8);
     text-align: center;
@@ -99,9 +96,9 @@
 }
 
 .message-icon {
-    width: 56px;
-    height: 56px;
-    background: var(--gradient-primary);
+    width: 52px;
+    height: 52px;
+    background: var(--accent);
     border-radius: var(--radius-full);
     display: flex;
     align-items: center;
@@ -112,20 +109,21 @@
 
 .message-card h3 {
     font-size: var(--text-2xl);
-    font-weight: var(--font-bold);
+    font-weight: var(--font-semibold);
     margin-bottom: var(--space-4);
+    color: var(--primary);
 }
 
 .message-card p {
     font-size: var(--text-base);
-    color: var(--color-text-secondary);
+    color: var(--secondary);
     line-height: var(--leading-relaxed);
     margin-bottom: var(--space-2);
 }
 
 @media (max-width: 768px) {
     .contact {
-        padding-top: calc(60px + var(--space-8));
+        padding-top: calc(44px + var(--space-8));
     }
 
     .contact-content {
@@ -162,7 +160,7 @@
 
     .contact-cta .btn {
         width: 100%;
-        min-height: 52px;
+        min-height: 50px;
     }
 
     .message-card {

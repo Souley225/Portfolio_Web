@@ -1,5 +1,6 @@
 .experience {
-    padding-top: calc(70px + var(--space-16));
+    padding-top: calc(48px + var(--space-16));
+    background: var(--bg-secondary);
 }
 
 .timeline {
@@ -20,19 +21,17 @@
 }
 
 .timeline-dot {
-    width: 14px;
-    height: 14px;
-    background: var(--gradient-primary);
+    width: 12px;
+    height: 12px;
+    background: var(--accent);
     border-radius: 50%;
-    box-shadow: var(--shadow-glow-sm);
 }
 
 .timeline-line {
-    width: 2px;
+    width: 1px;
     flex: 1;
-    background: linear-gradient(to bottom, var(--color-primary), transparent);
+    background: var(--color-border);
     margin-top: var(--space-2);
-    opacity: 0.5;
 }
 
 .timeline-content {
@@ -41,17 +40,17 @@
 }
 
 .experience-card {
-    background: var(--color-bg-card);
-    backdrop-filter: blur(10px);
-    border: 1px solid var(--color-border);
+    background: var(--surface);
+    border: 1px solid rgba(0, 0, 0, 0.12);
     border-radius: var(--radius-xl);
     padding: var(--space-8);
     transition: all var(--transition-base);
+    box-shadow: var(--shadow-sm);
 }
 
 .experience-card:hover {
-    border-color: rgba(13, 148, 136, 0.3);
-    box-shadow: var(--shadow-lg);
+    border-color: rgba(0, 0, 0, 0.2);
+    box-shadow: var(--shadow-card-hover);
 }
 
 .experience-header {
@@ -64,15 +63,15 @@
 }
 
 .company-logo {
-    width: 48px;
-    height: 48px;
-    background: var(--gradient-primary);
+    width: 44px;
+    height: 44px;
+    background: var(--accent);
     border-radius: var(--radius-lg);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: var(--text-xl);
-    font-weight: var(--font-bold);
+    font-size: var(--text-lg);
+    font-weight: var(--font-semibold);
     color: white;
 }
 
@@ -82,13 +81,13 @@
 
 .company-name {
     font-size: var(--text-lg);
-    font-weight: var(--font-bold);
-    color: var(--color-text);
+    font-weight: var(--font-semibold);
+    color: var(--primary);
 }
 
 .company-group {
     font-size: var(--text-sm);
-    color: var(--color-text-muted);
+    color: var(--secondary);
 }
 
 .experience-details {
@@ -97,8 +96,8 @@
 
 .experience-title {
     font-size: var(--text-xl);
-    font-weight: var(--font-semibold);
-    color: var(--color-text);
+    font-weight: var(--font-medium);
+    color: var(--primary);
     margin-bottom: var(--space-3);
 }
 
@@ -113,11 +112,11 @@
     align-items: center;
     gap: var(--space-2);
     font-size: var(--text-sm);
-    color: var(--color-text-secondary);
+    color: var(--secondary);
 }
 
 .info-item svg {
-    color: var(--color-primary-light);
+    color: var(--accent);
 }
 
 .experience-context,
@@ -131,15 +130,15 @@
 .experience-stack h5 {
     font-size: var(--text-xs);
     font-weight: var(--font-semibold);
-    color: var(--color-text-muted);
+    color: var(--secondary);
     text-transform: uppercase;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.05em;
     margin-bottom: var(--space-3);
 }
 
 .experience-context p {
     font-size: var(--text-sm);
-    color: var(--color-text-secondary);
+    color: var(--secondary);
     line-height: var(--leading-relaxed);
 }
 
@@ -155,7 +154,7 @@
     align-items: flex-start;
     gap: var(--space-3);
     font-size: var(--text-sm);
-    color: var(--color-text-secondary);
+    color: var(--secondary);
     line-height: var(--leading-relaxed);
 }
 
@@ -171,13 +170,10 @@
     gap: var(--space-2);
 }
 
-/* Highlight for Scoring.AI */
+/* Highlight text */
 .highlight {
-    background: var(--gradient-text);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    font-weight: var(--font-bold);
+    color: var(--accent);
+    font-weight: var(--font-semibold);
 }
 
 @media (max-width: 600px) {
