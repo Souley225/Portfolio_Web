@@ -1,0 +1,6 @@
+# robots.txt for souleymanesall.dev
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.souleymanesall.dev/sitemap.xml
