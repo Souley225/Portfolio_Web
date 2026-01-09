@@ -5,10 +5,8 @@ import './Header.css'
 const navLinks = [
     { path: '/', label: 'Accueil' },
     { path: '/projets', label: 'Projets' },
-    { path: '/experience', label: 'Expérience' },
+    { path: '/parcours', label: 'Parcours' },
     { path: '/competences', label: 'Compétences' },
-    { path: '/a-propos', label: 'À propos' },
-    { path: '/articles', label: 'Articles' },
     { path: '/contact', label: 'Contact' },
 ]
 

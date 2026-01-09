@@ -1,1 +1,12 @@
+# Redirects for old URLs (301 = permanent redirect for SEO)
+/experience    /parcours    301
+/a-propos      /parcours    301
+/articles      /contact     301
+
+# Also handle English URLs if anyone typed them
+/about         /parcours    301
+/projects      /projets     301
+/skills        /competences 301
+
+# SPA fallback - must be last
 /* /index.html 200

@@ -22,7 +22,7 @@ function Footer() {
                         <h4>Navigation</h4>
                         <nav className="footer-nav">
                             <Link to="/projets">Projets</Link>
-                            <Link to="/experience">Expérience</Link>
+                            <Link to="/parcours">Parcours</Link>
                             <Link to="/competences">Compétences</Link>
                             <Link to="/contact">Contact</Link>
                         </nav>

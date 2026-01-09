@@ -53,8 +53,31 @@
 .project-title {
     font-size: var(--text-xl);
     font-weight: var(--font-semibold);
-    margin-bottom: var(--space-3);
+    margin-bottom: var(--space-2);
     color: var(--primary);
+}
+
+.project-metrics {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-2) var(--space-3);
+    background: var(--accent-soft);
+    border: 1px solid rgba(37, 99, 235, 0.2);
+    border-radius: var(--radius-md);
+    margin-bottom: var(--space-3);
+    width: fit-content;
+}
+
+.project-metrics svg {
+    color: var(--accent);
+    flex-shrink: 0;
+}
+
+.project-metrics span {
+    font-size: var(--text-sm);
+    font-weight: var(--font-medium);
+    color: var(--accent);
 }
 
 .project-description {

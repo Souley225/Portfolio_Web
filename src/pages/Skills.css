@@ -104,37 +104,41 @@
     justify-content: center;
     font-size: var(--text-sm);
     font-weight: var(--font-semibold);
-    color: white;
+    background: var(--bg-secondary);
+    color: var(--primary);
+    border: 1px solid var(--color-border);
     transition: all var(--transition-base);
 }
 
 .tech-icon:hover {
+    background: var(--accent);
+    color: white;
+    border-color: var(--accent);
     transform: scale(1.05);
     box-shadow: var(--shadow-md);
 }
 
-.tech-icon.python {
-    background: #3776AB;
-}
-
-.tech-icon.sql {
-    background: #00758F;
-}
-
-.tech-icon.gcp {
-    background: #4285F4;
-}
-
-.tech-icon.sklearn {
-    background: #F89939;
-}
-
-.tech-icon.docker {
-    background: #2496ED;
-}
-
+/* All tech icons use unified styling, no brand colors */
+.tech-icon.python,
+.tech-icon.sql,
+.tech-icon.gcp,
+.tech-icon.sklearn,
+.tech-icon.docker,
 .tech-icon.git {
-    background: #F05032;
+    background: var(--bg-secondary);
+    color: var(--primary);
+    border: 1px solid var(--color-border);
+}
+
+.tech-icon.python:hover,
+.tech-icon.sql:hover,
+.tech-icon.gcp:hover,
+.tech-icon.sklearn:hover,
+.tech-icon.docker:hover,
+.tech-icon.git:hover {
+    background: var(--accent);
+    color: white;
+    border-color: var(--accent);
 }
 
 .tech-item span {

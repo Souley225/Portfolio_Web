@@ -6,49 +6,50 @@
 
 /* CSS Custom Properties */
 :root {
-  /* Colors - Apple-Inspired Minimal Palette */
-  --bg: #FFFFFF;
-  --bg-secondary: #F5F5F7;
+  /* Colors - Sophisticated Professional Palette */
+  --bg: #FAFAFA;
+  --bg-secondary: #F2F2F7;
   --surface: #FFFFFF;
-  --primary: #1D1D1F;
-  --secondary: #6E6E73;
-  --accent: #0071E3;
-  --accent-hover: #0077ED;
+  --primary: #18181B;
+  --secondary: #52525B;
+  --accent: #2563EB;
+  --accent-hover: #1D4ED8;
+  --accent-soft: rgba(37, 99, 235, 0.1);
 
   /* Legacy variable mapping for compatibility */
-  --color-primary: #0071E3;
-  --color-primary-light: #0077ED;
-  --color-primary-dark: #0066CC;
-  --color-secondary: #6E6E73;
-  --color-secondary-light: #86868B;
-  --color-accent: #0071E3;
+  --color-primary: #2563EB;
+  --color-primary-light: #3B82F6;
+  --color-primary-dark: #1D4ED8;
+  --color-secondary: #52525B;
+  --color-secondary-light: #71717A;
+  --color-accent: #2563EB;
 
-  /* No gradients - Apple uses flat colors */
-  --gradient-primary: #0071E3;
-  --gradient-hero: #F5F5F7;
+  /* No gradients - flat professional colors */
+  --gradient-primary: #2563EB;
+  --gradient-hero: #F2F2F7;
   --gradient-card: #FFFFFF;
-  --gradient-text: #0071E3;
+  --gradient-text: #2563EB;
   --gradient-subtle: transparent;
-  --gradient: #0071E3;
+  --gradient: #2563EB;
 
   /* Background Colors */
-  --color-bg: #FFFFFF;
-  --color-bg-secondary: #F5F5F7;
-  --color-bg-tertiary: #FBFBFD;
+  --color-bg: #FAFAFA;
+  --color-bg-secondary: #F2F2F7;
+  --color-bg-tertiary: #F8FAFC;
   --color-bg-card: #FFFFFF;
   --color-bg-card-hover: #FFFFFF;
-  --color-surface: #F5F5F7;
-  --color-border: rgba(0, 0, 0, 0.15);
+  --color-surface: #F2F2F7;
+  --color-border: rgba(0, 0, 0, 0.08);
 
   /* Text Colors - High Readability */
-  --color-text: #1D1D1F;
-  --color-text-secondary: #424245;
-  --color-text-muted: #6E6E73;
+  --color-text: #18181B;
+  --color-text-secondary: #3F3F46;
+  --color-text-muted: #52525B;
 
-  /* Status Colors - Muted Apple style */
-  --color-success: #34C759;
-  --color-warning: #FF9500;
-  --color-info: #0071E3;
+  /* Status Colors - Professional tone */
+  --color-success: #16A34A;
+  --color-warning: #D97706;
+  --color-info: #2563EB;
 
   /* Typography Scale */
   --font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;

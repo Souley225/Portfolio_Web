@@ -6,10 +6,11 @@ const projects = [
         type: 'Scoring Prédictif',
         title: 'Modèle de Scoring d\'Attrition Client',
         description: 'Solution de prédiction du risque de départ client permettant d\'identifier les clients à risque et d\'anticiper les actions de fidélisation.',
+        metrics: 'AUC 0.85 • Réduction potentielle du churn de 12%',
         points: [
-            'Détection des clients à risque',
-            'Priorisation des actions de rétention',
-            'Application web pour tester les prédictions'
+            'Détection des clients à risque avec scoring probabiliste',
+            'Priorisation des actions de rétention par segment',
+            'Application web pour tester les prédictions en temps réel'
         ],
         stack: ['Python', 'scikit-learn', 'Streamlit', 'MLflow', 'Docker'],
         status: 'deployed',
@@ -23,10 +24,11 @@ const projects = [
         type: 'Segmentation / Recommandation',
         title: 'Segmentation Client & Recommandation Produits',
         description: 'Analyse de la valeur client et recommandations personnalisées pour optimiser le ciblage marketing et augmenter le chiffre d\'affaires.',
+        metrics: '5 segments clients identifiés • Lift x3 sur recommandations',
         points: [
-            'Identification des meilleurs clients',
-            'Recommandations de vente croisée',
-            'Tableau de bord interactif'
+            'Segmentation RFM et clustering avancé',
+            'Recommandations de vente croisée par Market Basket Analysis',
+            'Tableau de bord interactif avec filtres dynamiques'
         ],
         stack: ['Python', 'SQL', 'GCP', 'scikit-learn'],
         status: 'deployed',
@@ -40,10 +42,11 @@ const projects = [
         type: 'MLOps / Recommandation',
         title: 'Moteur de Recommandation de Films',
         description: 'Système de recommandation personnalisée de films pour améliorer l\'expérience utilisateur et l\'engagement sur une plateforme de streaming.',
+        metrics: 'RMSE 0.87 • Pipeline MLOps complet avec CI/CD',
         points: [
-            'Recommandations personnalisées',
-            'Amélioration de l\'engagement utilisateur',
-            'Interface de test interactive'
+            'Recommandations personnalisées par collaborative filtering',
+            'API FastAPI avec versioning de modèles',
+            'Interface de test interactive avec feedback loop'
         ],
         stack: ['Python', 'MLflow', 'Docker', 'FastAPI', 'CI/CD'],
         status: 'deployed',
@@ -57,10 +60,11 @@ const projects = [
         type: 'NLP / Sécurité',
         title: 'Détection de Phishing par URL',
         description: 'Outil de sécurité pour détecter automatiquement les liens malveillants et protéger les utilisateurs contre le phishing.',
+        metrics: 'Accuracy 94% • F1-Score 0.92',
         points: [
-            'Protection contre les arnaques en ligne',
-            'Analyse automatique des URLs suspectes',
-            'Système de scoring de confiance'
+            'Extraction de features lexicales et sémantiques',
+            'Comparaison de modèles (Random Forest, XGBoost, SVM)',
+            'Système de scoring de confiance en temps réel'
         ],
         stack: ['Python', 'NLP', 'scikit-learn'],
         status: 'github',
@@ -92,6 +96,14 @@ function Projects() {
                             </div>
 
                             <h3 className="project-title">{project.title}</h3>
+                            {project.metrics && (
+                                <div className="project-metrics">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                        <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                                    </svg>
+                                    <span>{project.metrics}</span>
+                                </div>
+                            )}
                             <p className="project-description">{project.description}</p>
 
                             <div className="project-points">
